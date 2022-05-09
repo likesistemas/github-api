@@ -9,6 +9,6 @@ class ApiTest extends TestCase {
 	public function testInstance() {
 		$api = new Api(getenv('GITHUB_TOKEN'));
 		$this->assertInstanceOf(Api::class, $api);
-		$api->pullRequestComment('likesistemas', 'github-api', 1, 'Test comment.');
+		$api->pullRequestComment('likesistemas', 'github-api', 1, 'Test comment on ' . getenv('PHP_VERSION') . '.');
 	}
 }
