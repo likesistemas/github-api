@@ -4,4 +4,5 @@ namespace Like\GithubApi;
 
 use Exception;
 
-class RequestErrorException extends Exception {}
+class RequestErrorException extends Exception {
+}
